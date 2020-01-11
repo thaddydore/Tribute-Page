@@ -1,0 +1,168 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* html{
+	scroll-behavior: smooth;
+} */
+body {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url("./harry-cunningham-JnMwwc8PX2Q-unsplash.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	max-height: 100vh;
+	color: #ddd;
+}
+
+#nav {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 0.1px groove #ddd;
+	max-height: 8vh;
+	width: 100%;
+}
+
+#home {
+	display: flex;
+	align-items: center;
+}
+
+#home ul {
+	list-style: none;
+}
+
+#home ul li {
+	margin: 10px;
+}
+
+#home ul li a {
+	text-decoration: none;
+	color: #ddd;
+	padding: 5px;
+}
+
+#home ul li a:hover {
+	background-color: #ccc;
+	color: #4b38c2;
+	padding: 10px 10px 12px 10px;
+	border-radius: 5px;
+}
+
+.nav-list ul {
+	list-style: none;
+	margin: 15px;
+	display: flex;
+}
+
+.nav-list ul li {
+	margin-right: 10px;
+}
+
+.nav-list ul li a {
+	color: #ddd;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 5px;
+}
+
+.nav-list ul li a:hover {
+	background-color: #ccc;
+	color: #4b38c2;
+	padding: 10px 10px 12px 10px;
+	border-radius: 5px;
+}
+
+#title {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 20px;
+	color: #fff;
+}
+
+#img-div {
+	width: 100%;
+	margin-top: 20px;
+}
+
+#figure {
+	width: 50%;
+	margin: auto auto;
+}
+
+#img-caption {
+	text-align: center;
+	color: #fff;
+}
+
+#image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	border-radius: 50vw;
+	border: 0.5 solid #ccc;
+}
+
+#image:hover {
+	transform: scale(1.11);
+}
+
+#tribute-info {
+	text-align: justify;
+	padding: 25px 25px 5px 25px;
+	line-height: 25px;
+}
+
+#tribute-link {
+	text-decoration: none;
+	background-color: #4b38c2;
+	margin-left: 25px;
+	border: 0.5 solid #ccc;
+	padding: 5px 10px 5px 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	color: #ccc;
+	transition: color 20ms;
+}
+
+#tribute-link:hover {
+	background-color: #ccc;
+	color: #4b38c2;
+}
+
+#footer {
+	max-height: 20vh;
+	margin-top: 20px;
+	border-top: 0.5px solid #ccc;
+	display: flex;
+	flex-direction: column;
+}
+
+#footer p {
+	text-align: center;
+	padding: 20px 0 20px 0;
+}
+
+#footer #scroll-top {
+	align-self: flex-end;
+	margin: 5px 10px 0 0;
+	text-decoration: none;
+	background-color: #4b38c2;
+	border: 0.5 solid #ccc;
+	padding: 5px 10px 5px 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	color: #ccc;
+	transition: color 20ms;
+}
+
+#footer #scroll-top:hover {
+	background-color: #ccc;
+	color: #4b38c2;
+}
+
