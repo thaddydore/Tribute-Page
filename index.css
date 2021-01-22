@@ -14,7 +14,7 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 	max-height: 100vh;
 	color: #ddd;
 }
@@ -110,6 +110,7 @@ body {
 
 #image:hover {
 	transform: scale(1.11);
+	transition: transform .4s ease-in-out;
 }
 
 #tribute-info {
@@ -158,11 +159,11 @@ body {
 	font-size: 15px;
 	border-radius: 5px;
 	color: #ccc;
-	transition: color 20ms;
 }
 
 #footer #scroll-top:hover {
 	background-color: #ccc;
 	color: #4b38c2;
+	transition: color .6s;
 }
 
