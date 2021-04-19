@@ -1,6 +1,6 @@
 * {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,13 +10,17 @@
 } */
 body {
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-		url("./img/harry-cunningham-JnMwwc8PX2Q-unsplash.jpg");
+		url('./img/harry-cunningham-JnMwwc8PX2Q-unsplash.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	max-height: 100vh;
 	color: #ddd;
+}
+
+#main {
+	padding: 0 20px;
 }
 
 #nav {
@@ -30,6 +34,7 @@ body {
 #home {
 	display: flex;
 	align-items: center;
+	transition: all 0.35ms ease-out;
 }
 
 #home ul {
@@ -43,97 +48,80 @@ body {
 #home ul li a {
 	text-decoration: none;
 	color: #ddd;
-	padding: 5px;
+	padding: 10px 20px;
 }
 
 #home ul li a:hover {
 	background-color: #ccc;
 	color: #4b38c2;
-	padding: 10px 10px 12px 10px;
-	border-radius: 5px;
-}
-
-.nav-list ul {
-	list-style: none;
-	margin: 15px;
-	display: flex;
-}
-
-.nav-list ul li {
-	margin-right: 10px;
-}
-
-.nav-list ul li a {
-	color: #ddd;
-	text-decoration: none;
-	text-transform: capitalize;
-	padding: 5px;
-}
-
-.nav-list ul li a:hover {
-	background-color: #ccc;
-	color: #4b38c2;
-	padding: 10px 10px 12px 10px;
 	border-radius: 5px;
 }
 
 #title {
 	text-align: center;
 	font-size: 30px;
-	margin-top: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	color: #fff;
 }
 
 #img-div {
 	width: 100%;
-	margin-top: 20px;
+	height: auto;
+	margin-bottom: 80px;
 }
 
 #figure {
-	width: 50%;
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
 	margin: auto auto;
 }
 
 #img-caption {
 	text-align: center;
 	color: #fff;
+	font-weight: 500;
 }
 
 #image {
 	display: block;
 	max-width: 100%;
-	height: auto;
+	height: 100%;
 	margin: auto;
-	border-radius: 50vw;
+	border-radius: 50%;
 	border: 0.5 solid #ccc;
 }
 
 #image:hover {
-	transform: scale(1.11);
-	transition: transform .4s ease-in-out;
+	transform: scale(1.1);
+	transition: transform 0.35s ease;
 }
 
 #tribute-info {
-	text-align: justify;
-	padding: 25px 25px 5px 25px;
-	line-height: 25px;
+	text-align: left;
+	line-height: 1.9;
+	width: 100%;
+	max-width: 140ch;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
 }
 
 #tribute-link {
 	text-decoration: none;
-	background-color: #4b38c2;
-	margin-left: 25px;
+	background-color: #ccc;
 	border: 0.5 solid #ccc;
-	padding: 5px 10px 5px 10px;
+	padding: 10px 20px;
 	font-size: 15px;
 	border-radius: 5px;
-	color: #ccc;
-	transition: color 20ms;
+	color: #4b38c2;
+	transition: color 20ms ease;
 }
 
 #tribute-link:hover {
-	background-color: #ccc;
-	color: #4b38c2;
+	color: #ccc;
+	background-color: #4b38c2;
 }
 
 #footer {
@@ -155,7 +143,7 @@ body {
 	text-decoration: none;
 	background-color: #4b38c2;
 	border: 0.5 solid #ccc;
-	padding: 5px 10px 5px 10px;
+	padding: 10px 20px;
 	font-size: 15px;
 	border-radius: 5px;
 	color: #ccc;
@@ -164,6 +152,5 @@ body {
 #footer #scroll-top:hover {
 	background-color: #ccc;
 	color: #4b38c2;
-	transition: color .6s;
+	transition: color 0.6s;
 }
-
